@@ -15,7 +15,7 @@ class _MainPageViewState extends State<MainPageView> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Dashboard"),
+          title: const Text("Main Page"),
           actions: const [],
         ),
         body: Center(
@@ -30,7 +30,10 @@ class _MainPageViewState extends State<MainPageView> {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blue,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  context.goNamed("profile",
+                      pathParameters: {'name': "Ahmad Hidayat"});
+                },
                 child: const Text("profile"),
               ),
               const SizedBox(
@@ -40,7 +43,9 @@ class _MainPageViewState extends State<MainPageView> {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blueGrey,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  context.goNamed('about');
+                },
                 child: const Text("about"),
               ),
               const SizedBox(

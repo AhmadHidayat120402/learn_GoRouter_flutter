@@ -14,7 +14,7 @@ class _AboutPageViewState extends State<AboutPageView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Dashboard"),
+        title: const Text("About"),
         actions: const [],
       ),
       body: SingleChildScrollView(
